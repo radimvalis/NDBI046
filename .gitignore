@@ -1,2 +1,7 @@
 venv/
 __pycache__/
+health-care.csv
+population-2021.csv
+lau-nuts-mapping.csv
+datacube-health-care.ttl
+datacube-population-2021.ttl

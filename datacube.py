@@ -37,14 +37,14 @@ def add_territorial_dimensions(graph: Graph):
 
     graph.add((RVV.region, RDF.type, RDF.Property))
     graph.add((RVV.region, RDF.type, QB.DimensionProperty))
-    graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004", lang="en")))
-    graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004", lang="cs")))
+    graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004 code", lang="en")))
+    graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004 kód", lang="cs")))
     graph.add((RVV.region, RDFS.range, XSD.string))
 
     graph.add((RVV.county, RDF.type, RDF.Property))
     graph.add((RVV.county, RDF.type, QB.DimensionProperty))
-    graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU", lang="en")))
-    graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU", lang="cs")))
+    graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU code", lang="en")))
+    graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU kód", lang="cs")))
     graph.add((RVV.county, RDFS.range, XSD.string))
 
     return graph
@@ -83,7 +83,7 @@ def create_health_care_QB(dataset_uri: URIRef):
 
     # create data schema definition
 
-    dsd_uri = URIRef(f"{BASE_URI}dsd/health_care")
+    dsd_uri = URIRef(f"{BASE_URI}/dsd/health_care")
     measure = RVV.care_providers_count
     dimensions = [RVV.region, RVV.county, RVV.field_of_care]
 
