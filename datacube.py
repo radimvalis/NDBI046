@@ -1,7 +1,11 @@
 
-from rdflib import Graph, URIRef, BNode, Literal, RDF, RDFS, XSD, QB, DCTERMS
+from rdflib import Graph, Namespace, URIRef, BNode, Literal, RDF, RDFS, XSD, QB, DCTERMS
 from os.path import getmtime
 from datetime import datetime
+
+SDMX_CONCEPT = Namespace("http://purl.org/linked-data/sdmx/2009/concept#")
+SDMX_DIMENSION = Namespace("http://purl.org/linked-data/sdmx/2009/dimension#")
+SDMX_MEASURE = Namespace("http://purl.org/linked-data/sdmx/2009/measure#")
 
 BASE_URI = "https://github.com/radimvalis"
 
@@ -40,12 +44,16 @@ def add_territorial_dimensions(graph: Graph):
     graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004 code", lang="en")))
     graph.add((RVV.region, RDFS.label, Literal("NUTS3-2004 kód", lang="cs")))
     graph.add((RVV.region, RDFS.range, XSD.string))
+    graph.add((RVV.region, RDFS.subPropertyOf, SDMX_DIMENSION.refArea))
+    graph.add((RVV.region, QB.concept, SDMX_CONCEPT.refArea))
 
     graph.add((RVV.county, RDF.type, RDF.Property))
     graph.add((RVV.county, RDF.type, QB.DimensionProperty))
     graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU code", lang="en")))
     graph.add((RVV.county, RDFS.label, Literal("OKRES_LAU kód", lang="cs")))
     graph.add((RVV.county, RDFS.range, XSD.string))
+    graph.add((RVV.county, RDFS.subPropertyOf, SDMX_DIMENSION.refArea))
+    graph.add((RVV.county, QB.concept, SDMX_CONCEPT.refArea))
 
     return graph
 
@@ -55,6 +63,9 @@ def create_graph():
 
     graph.bind("dct", DCTERMS)
     graph.bind("qb", QB)
+    graph.bind("sdmx-concept", SDMX_CONCEPT)
+    graph.bind("sdmx-dimension", SDMX_DIMENSION)
+    graph.bind("sdmx-measure", SDMX_MEASURE)
     graph.bind("rvv", f"{BASE_URI}/vocabulary/")
 
     return graph
@@ -80,6 +91,7 @@ def create_health_care_QB(dataset_uri: URIRef):
     graph.add((RVV.care_providers_count, RDFS.label, Literal("number of care providers", lang="en")))
     graph.add((RVV.care_providers_count, RDFS.label, Literal("počet poskytovatelů zdravotní péče", lang="cs")))
     graph.add((RVV.care_providers_count, RDFS.range, XSD.integer))
+    graph.add((RVV.care_providers_count, RDFS.subPropertyOf, SDMX_MEASURE.obsValue))
 
     # create data schema definition
 
@@ -123,10 +135,11 @@ def create_population_QB(dataset_uri: URIRef):
     graph.add((RVV.mean_population, RDFS.label, Literal("mean population", lang="en")))
     graph.add((RVV.mean_population, RDFS.label, Literal("střední stav obyvatel", lang="cs")))
     graph.add((RVV.mean_population, RDFS.range, XSD.integer))
+    graph.add((RVV.mean_population, RDFS.subPropertyOf, SDMX_MEASURE.obsValue))
 
     # create data schema definition
 
-    dsd_uri = URIRef(f"{BASE_URI}dsd/population")
+    dsd_uri = URIRef(f"{BASE_URI}/dsd/population")
     measure = RVV.mean_population
     dimensions = [RVV.region, RVV.county]
 
