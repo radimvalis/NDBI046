@@ -23,7 +23,7 @@ def load_NUTS_to_LAU_mapping():
     
     return NUTS_to_LAU_mapping
 
-def load_data_to_graph(data_path, graph: Graph, dataset_uri: URIRef):
+def load_data_to_datacube(data_path, datacube: Graph, dataset_uri: URIRef):
     
     mapping = load_NUTS_to_LAU_mapping()
 
@@ -54,15 +54,15 @@ def load_data_to_graph(data_path, graph: Graph, dataset_uri: URIRef):
 
                 observation = URIRef(f"https://github.com/radimvalis/observations/p-{observation_id}")
 
-                graph.add((observation, RDF.type, QB.Observation))
-                graph.add((observation, QB.dataSet, dataset_uri))
-                graph.add((observation, RVV.region, Literal(LAU_code[:-1], lang="cs")))
-                graph.add((observation, RVV.county, Literal(LAU_code, lang="cs")))
-                graph.add((observation, RVV.mean_population, Literal(line[hodnota_idx], datatype=XSD.integer)))
+                datacube.add((observation, RDF.type, QB.Observation))
+                datacube.add((observation, QB.dataSet, dataset_uri))
+                datacube.add((observation, RVV.region, Literal(LAU_code[:-1], lang="cs")))
+                datacube.add((observation, RVV.county, Literal(LAU_code, lang="cs")))
+                datacube.add((observation, RVV.mean_population, Literal(line[hodnota_idx], datatype=XSD.integer)))
 
                 observation_id += 1
     
-    return graph
+    return datacube
 
 
 def main():
@@ -72,10 +72,10 @@ def main():
         return
 
     data_path = sys.argv[1]
-    graph = create_population_QB(URIRef(BASE_URI))
+    datacube = create_population_QB(URIRef(BASE_URI))
     dataset_uri = URIRef(f"{BASE_URI}/datasets/population-2021")
-    graph = load_data_to_graph(data_path, graph, dataset_uri)
-    print(graph.serialize(format="turtle"))
+    datacube = load_data_to_datacube(data_path, datacube, dataset_uri)
+    print(datacube.serialize(format="turtle"))
 
 if __name__ == "__main__":
     main()

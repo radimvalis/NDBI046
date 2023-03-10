@@ -46,7 +46,7 @@ def load_health_care_data(data_path):
     
     return data
 
-def load_data_to_graph(data, graph: Graph, dataset_uri: URIRef):
+def load_data_to_datacube(data, datacube: Graph, dataset_uri: URIRef):
 
     observation_id = 1
 
@@ -56,16 +56,16 @@ def load_data_to_graph(data, graph: Graph, dataset_uri: URIRef):
 
                 observation = URIRef(f"{BASE_URI}/observations/hc-{observation_id}")
 
-                graph.add((observation, RDF.type, QB.Observation))
-                graph.add((observation, QB.dataSet, dataset_uri))
-                graph.add((observation, RVV.region, Literal(region, lang="cs")))
-                graph.add((observation, RVV.county, Literal(district, lang="cs")))
-                graph.add((observation, RVV.field_of_care, Literal(f, lang="cs")))
-                graph.add((observation, RVV.care_providers_count, Literal(count, datatype=XSD.integer)))
+                datacube.add((observation, RDF.type, QB.Observation))
+                datacube.add((observation, QB.dataSet, dataset_uri))
+                datacube.add((observation, RVV.region, Literal(region, lang="cs")))
+                datacube.add((observation, RVV.county, Literal(district, lang="cs")))
+                datacube.add((observation, RVV.field_of_care, Literal(f, lang="cs")))
+                datacube.add((observation, RVV.care_providers_count, Literal(count, datatype=XSD.integer)))
 
                 observation_id += 1
 
-    return graph
+    return datacube
     
 
 def main():
@@ -77,9 +77,9 @@ def main():
     data_path = sys.argv[1]
     dataset_uri = URIRef(f"{BASE_URI}/datasets/health_care")
     parsed_data = load_health_care_data(data_path)
-    graph = create_health_care_QB(dataset_uri)
-    graph = load_data_to_graph(parsed_data, graph, dataset_uri)
-    print(graph.serialize(format="turtle"))
+    datacube = create_health_care_QB(dataset_uri)
+    datacube = load_data_to_datacube(parsed_data, datacube, dataset_uri)
+    print(datacube.serialize(format="turtle"))
 
 if __name__ == "__main__":
     main()
