@@ -12,7 +12,7 @@ Pro úspěšnou instalaci a vygenerování všech výstupních dat si na disku v
 
 ### Prerekvizity
 
-Pro úspěšnou instalaci je potřebné mít naistalován [Python](https://www.python.org/), balíčkovací nástroj [pip](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-pip) a pomocí něj nainstalován balíček [virtualenv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv)
+Pro úspěšnou instalaci je potřebné mít naistalován [Python](https://www.python.org/), balíčkovací nástroj [pip](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-pip) a pomocí něj nainstalován balíček [virtualenv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv).
 
 ### Instalace
 
@@ -33,6 +33,13 @@ cd NDBI046
 bash download_data.sh
 ```
 V adresáři `~/NDBI046` by se měly objevit soubory `population-2021.csv`, `health-care.csv` a `lau-nuts-mapping.csv`.
+
+Zdrojová data a další informace jsou dostupné následujících odkazech:
+
+* [population-2021.csv](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F12032e1445fd74fa08da79b14137fc29)
+* [health-care.csv](https://data.gov.cz/datov%C3%A1-sada?iri=https://data.gov.cz/zdroj/datov%C3%A9-sady/https---opendata.mzcr.cz-api-3-action-package_show-id-nrpzs)
+* [lau-nuts-mapping.csv](https://skoda.projekty.ms.mff.cuni.cz/ndbi046/seminars/02/%C4%8D%C3%ADseln%C3%ADk-okres%C5%AF-vazba-101-nad%C5%99%C3%ADzen%C3%BD.csv)
+
 
 ###### 3 - instalace závislostí
 
