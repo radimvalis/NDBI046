@@ -57,7 +57,7 @@ def add_territorial_dimensions(datacube: Graph):
 
     return datacube
 
-def create_datacube():
+def create_graph():
 
     datacube = Graph()
 
@@ -72,7 +72,7 @@ def create_datacube():
 
 def create_health_care_QB(dataset_uri: URIRef):
 
-    datacube = create_datacube()
+    datacube = create_graph()
 
     # definiton of dimensions
 
@@ -122,7 +122,7 @@ def create_health_care_QB(dataset_uri: URIRef):
 
 def create_population_QB(dataset_uri: URIRef):
 
-    datacube = create_datacube()
+    datacube = create_graph()
 
     # definiton of dimensions
 
