@@ -116,7 +116,8 @@ def create_health_care_QB(dataset_uri: URIRef):
     datacube.add((dataset_uri, DCTERMS.description, Literal("Datová kostka popisující poskytovatele zdravotních služeb v České republice", lang="cs")))
     datacube.add((dataset_uri, DCTERMS.publisher, Literal(f"{BASE_URI}/me", datatype=XSD.anyURI)))
     datacube.add((dataset_uri, DCTERMS.license, Literal("https://opensource.org/license/mit/", datatype=XSD.anyURI)))
-    datacube.add((dataset_uri, DCTERMS.modified, Literal(datetime.fromtimestamp(getmtime("datacube.py")),datatype=XSD.dateTime)))
+    datacube.add((dataset_uri, DCTERMS.modified, Literal("2023-03-12",datatype=XSD.date)))
+    datacube.add((dataset_uri, DCTERMS.issued, Literal("2023-03-12",datatype=XSD.date)))
 
     return datacube
 
@@ -160,6 +161,7 @@ def create_population_QB(dataset_uri: URIRef):
     datacube.add((dataset_uri, DCTERMS.description, Literal("Datová kostka popisující populaci České republiky", lang="cs")))
     datacube.add((dataset_uri, DCTERMS.publisher, Literal(f"{BASE_URI}/me", datatype=XSD.anyURI)))
     datacube.add((dataset_uri, DCTERMS.license, Literal("https://opensource.org/license/mit/", datatype=XSD.anyURI)))
-    datacube.add((dataset_uri, DCTERMS.modified, Literal(datetime.fromtimestamp(getmtime("datacube.py")),datatype=XSD.dateTime)))
+    datacube.add((dataset_uri, DCTERMS.modified, Literal("2023-03-12",datatype=XSD.date)))
+    datacube.add((dataset_uri, DCTERMS.issued, Literal("2023-03-12",datatype=XSD.date)))
 
     return datacube
