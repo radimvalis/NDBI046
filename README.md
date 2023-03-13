@@ -83,5 +83,5 @@ python datacube_validation.py datacube-population-2021.ttl
 ```
 
 *Poznámky:*
-* *Třetí integritní omezení (IC-3) neprochází testem, jelikož se v totazu používá obecná `qb:componentProperty`, datová kostka ale používá jejího specializovaného potomka - `qb:measure`.*
+* *Třetí integritní omezení (IC-3) neprochází testem, jelikož se v dotazu používá obecná `qb:componentProperty`, datová kostka ale používá jejího specializovaného potomka - `qb:measure`.*
 * *Sedmé integritní omezení (IC-7) se nedaří vyhodnotit, zřejmě kvůli chybě v balíčku [rdflib](https://rdflib.readthedocs.io/en/stable/index.html).*

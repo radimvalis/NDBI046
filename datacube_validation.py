@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import rdflib, sys, os
 
 def run_validation(dataset: rdflib.Graph):
