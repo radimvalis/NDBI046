@@ -55,12 +55,12 @@ def load_data_to_datacube(data, datacube: Graph, dataset_uri: URIRef):
 
     observation_id = 1
 
-    for region, countys in data.items():
+    for region, counties in data.items():
 
         region_instance = URIRef((f"{BASE_URI}/ontology#Regions/{region}"))
         add_region_instance(region_instance, region, datacube)
 
-        for county, fields_of_care in countys.items():
+        for county, fields_of_care in counties.items():
 
             county_instance = URIRef((f"{BASE_URI}/ontology#Counties/{county}"))
             add_county_instance(county_instance, county, datacube)
@@ -85,7 +85,6 @@ def load_data_to_datacube(data, datacube: Graph, dataset_uri: URIRef):
                 observation_id += 1
 
     return datacube
-    
 
 def main():
 
