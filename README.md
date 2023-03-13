@@ -20,7 +20,7 @@ Pro úspěšnou instalaci je potřebné mít naistalován [Python](https://www.p
 
 Otevřete terminál a spusťte následující příkaz:
 ```
-git clone https://github.com/radimvalis/NDBI046
+git clone https://github.com/radimvalis/NDBI046.git
 ```
 Obsah tohoto repozitáře bude následně obsažen v adresáři  `~/NDBI046`.
 
