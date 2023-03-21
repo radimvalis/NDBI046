@@ -47,7 +47,7 @@ Vytvořte virtuální prostředí a nainstalujte potřebné balíčky:
 ```
 python -m venv venv
 . venv/bin/activate
-pip install rdflib
+pip install -r requirements.txt
 ```
 
 ### Obsah adresáře
