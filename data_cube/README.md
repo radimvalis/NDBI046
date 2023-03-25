@@ -1,7 +1,7 @@
 # Assignment 1 - Data Cube
 
 
-## Získání zdrojových dat
+### Získání zdrojových dat
 
 V adresáři `~/NDBI046/data_cube` spusťte program `download_data.sh`, který stáhne potřebná data:
 ```
@@ -17,7 +17,7 @@ Zdrojová data a další informace jsou dostupné následujících odkazech:
 * [lau-nuts-mapping.csv](https://skoda.projekty.ms.mff.cuni.cz/ndbi046/seminars/02/%C4%8D%C3%ADseln%C3%ADk-okres%C5%AF-vazba-101-nad%C5%99%C3%ADzen%C3%BD.csv)
 
 
-## Instalace závislostí
+### Instalace závislostí
 
 Vytvořte virtuální prostředí a nainstalujte potřebné balíčky:
 ```
