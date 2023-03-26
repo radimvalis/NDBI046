@@ -47,12 +47,12 @@ def create_datacubes():
 
     @task(task_id="create_health_care_datacube")
     def create_health_care_datacube(**kwargs):
-        output_dir = kwargs["dag_run"].conf.get("output_path", TTL_HEALTH_CARE)
+        output_dir = kwargs["dag_run"].conf.get("output_path", DIR_OUTPUTS)
         health_care.create_health_care_datacube(CSV_HEALTH_CARE_PATH, output_dir + TTL_HEALTH_CARE)
 
     @task(task_id="create_population_datacube")
     def create_population_datacube(**kwargs):
-        output_dir = kwargs["dag_run"].conf.get("output_path", TTL_POPULATION)
+        output_dir = kwargs["dag_run"].conf.get("output_path", DIR_OUTPUTS)
         population.create_population_datacube(CSV_POPOPULATION_PATH, CSV_LAU_NUTS_MAP_PATH, output_dir + TTL_POPULATION)
     
     create_data_dirs >> [download_lau_nuts_map(), download_population_data()] >> create_population_datacube()
