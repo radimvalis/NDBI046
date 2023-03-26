@@ -13,17 +13,17 @@ DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 DIR_INPUTS = DIR_PATH + "/inputs/"
 DIR_OUTPUTS = DIR_PATH + "/outputs/"
 
-CSV_HEALTH_CARE = DIR_INPUTS + "health-care.csv"
-CSV_POPOPULATION = DIR_INPUTS + "population.csv"
-CSV_LAU_NUTS_MAP = DIR_INPUTS +"lau-nuts-mapping.csv"
+CSV_HEALTH_CARE_PATH = DIR_INPUTS + "health-care.csv"
+CSV_POPOPULATION_PATH = DIR_INPUTS + "population.csv"
+CSV_LAU_NUTS_MAP_PATH = DIR_INPUTS +"lau-nuts-mapping.csv"
 
-TTL_HEALTH_CARE = DIR_OUTPUTS + "health_care.ttl"
-TTL_POPULATION = DIR_OUTPUTS + "population.ttl"
+TTL_HEALTH_CARE = "health_care.ttl"
+TTL_POPULATION = "population.ttl"
 
 @dag(
     dag_id="data-cubes",
     schedule=None,
-    start_date=pendulum.datetime(2023, 3, 25)
+    start_date=pendulum.datetime(2023, 3, 26)
 )
 
 def create_datacubes():
@@ -33,26 +33,28 @@ def create_datacubes():
         bash_command=f" [[ ! -d {DIR_INPUTS} ]] && mkdir {DIR_INPUTS} ; [[ ! -d {DIR_OUTPUTS} ]] && mkdir {DIR_OUTPUTS} ; exit 0"
     )
 
-    @task
+    @task(task_id="download_health_care_data")
     def download_health_care_data():
-        download.download_data(URL_HEALTH_CARE, CSV_HEALTH_CARE)
+        download.download_data(URL_HEALTH_CARE, CSV_HEALTH_CARE_PATH)
 
-    @task
+    @task(task_id="download_population_data")
     def download_population_data():
-        download.download_data(URL_POPULATION, CSV_POPOPULATION)
+        download.download_data(URL_POPULATION, CSV_POPOPULATION_PATH)
     
-    @task
+    @task(task_id="download_lau_nuts_map")
     def download_lau_nuts_map():
-        download.download_data(URL_LAU_NUTS_MAP, CSV_LAU_NUTS_MAP)
+        download.download_data(URL_LAU_NUTS_MAP, CSV_LAU_NUTS_MAP_PATH)
 
-    @task
-    def create_population_datacube():
-        population.create_population_datacube(CSV_POPOPULATION, CSV_LAU_NUTS_MAP, TTL_POPULATION)
+    @task(task_id="create_health_care_datacube")
+    def create_health_care_datacube(**kwargs):
+        output_dir = kwargs["dag_run"].conf.get("output_path", TTL_HEALTH_CARE)
+        health_care.create_health_care_datacube(CSV_HEALTH_CARE_PATH, output_dir + TTL_HEALTH_CARE)
+
+    @task(task_id="create_population_datacube")
+    def create_population_datacube(**kwargs):
+        output_dir = kwargs["dag_run"].conf.get("output_path", TTL_POPULATION)
+        population.create_population_datacube(CSV_POPOPULATION_PATH, CSV_LAU_NUTS_MAP_PATH, output_dir + TTL_POPULATION)
     
-    @task
-    def create_health_care_datacube():
-        health_care.create_health_care_datacube(CSV_HEALTH_CARE, TTL_HEALTH_CARE)
-
     create_data_dirs >> [download_lau_nuts_map(), download_population_data()] >> create_population_datacube()
     create_data_dirs >> download_health_care_data() >> create_health_care_datacube()
     
