@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ### Obsah adresáře
 
-Pro generování datových kostek slouží skripty `population.py` a `health_care.py`. Oba skripty využívají společný interface, definovaný v souboru `datacube.py`. Zdrojová data pro datové kostky jsou po spuštění skriptu `download_data.sh` uložena v souborech `population-2021.csv`, `health-care.csv` a `lau-nuts-mapping.csv`. Skript `datacube_validation.py` validuje vytvořené datové kostky pomocí dotazů, uložených v souboru `validation_queries.sparql`.
+Pro generování datových kostek slouží skripty `population.py` a `health_care.py`. Oba skripty využívají společný interface, definovaný v souboru `datacube.py`. Zdrojová data pro datové kostky jsou po spuštění skriptu `download_data.sh` uložena v souborech `population-2021.csv`, `health-care.csv` a `lau-nuts-mapping.csv`. Skript `datacube_validation.py` validuje vytvořené datové kostky pomocí dotazů, uložených v souboru `validation_queries.sparql`. Dodatečné informace o datových kostkách generuje skript `provenance.py`. 
 
 
 ### Generování datových kostek
@@ -59,6 +59,16 @@ Validace souboru `datacube-population-2021.ttl`:
 ```
 python datacube_validation.py datacube-population-2021.ttl
 ```
+
+### Generování provenance
+
+Provenace lze vygenerovat následujícím příkazem:
+```
+python provenance.py > provenance.trig
+```
+
+Výsledek bude uložen v souboru `provenance.trig`.
+
 
 *Poznámky:*
 * *Třetí integritní omezení (IC-3) neprochází testem, jelikož se v dotazu používá obecná `qb:componentProperty`, datová kostka ale používá jejího specializovaného potomka - `qb:measure`.*
