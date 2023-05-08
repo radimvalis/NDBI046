@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import csv, sys
-from rdflib import Graph, URIRef, Literal, RDF, RDFS, XSD, QB 
+from rdflib import Graph, URIRef, Literal, RDF, XSD, QB 
 from datacube import BASE_URI, RVO, create_health_care_QB, add_region_instance, add_county_instance, add_field_of_care_instance
 
 def load_health_care_data(data_path):

@@ -1,0 +1,892 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rvo: <https://github.com/radimvalis/ontology#> .
+@prefix rvv: <https://github.com/radimvalis/vocabulary/> .
+@prefix sdmx-concept: <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rvv:county a rdfs:Class ;
+    rdfs:label "OKRES_LAU kód"@cs,
+        "OKRES_LAU code"@en ;
+    skos:prefLabel "OKRES_LAU kód"@cs,
+        "OKRES_LAU code"@en .
+
+rvv:region a rdfs:Class ;
+    rdfs:label "NUTS3-2004 kód"@cs,
+        "NUTS3-2004 code"@en ;
+    skos:prefLabel "NUTS3-2004 kód"@cs,
+        "NUTS3-2004 code"@en .
+
+<https://github.com/radimvalis> a qb:DataSet ;
+    rdfs:label "Obyvatelé okresy 2021"@cs,
+        "Population in districts 2021"@en ;
+    dct:description "Datová kostka popisující populaci České republiky"@cs,
+        "Datacube describing population in the Czech Republic"@en ;
+    dct:issued "2023-03-13"^^xsd:date ;
+    dct:license "https://opensource.org/license/mit/"^^xsd:anyURI ;
+    dct:modified "2023-03-13"^^xsd:date ;
+    dct:publisher "https://github.com/radimvalis/me"^^xsd:anyURI ;
+    dct:title "Obyvatelé okresy 2021"@cs,
+        "Population In Counties 2021"@en ;
+    qb:structure <https://github.com/radimvalis/dsd/population> .
+
+<https://github.com/radimvalis/observations/p-1> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0427> ;
+    rvo:mean_population 116930 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-10> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0713> ;
+    rvo:mean_population 107697 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ071> .
+
+<https://github.com/radimvalis/observations/p-11> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0714> ;
+    rvo:mean_population 126826 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ071> .
+
+<https://github.com/radimvalis/observations/p-12> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0322> ;
+    rvo:mean_population 84661 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-13> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0326> ;
+    rvo:mean_population 48587 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-14> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0411> ;
+    rvo:mean_population 88030 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ041> .
+
+<https://github.com/radimvalis/observations/p-15> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0723> ;
+    rvo:mean_population 140392 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ072> .
+
+<https://github.com/radimvalis/observations/p-16> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0724> ;
+    rvo:mean_population 188947 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ072> .
+
+<https://github.com/radimvalis/observations/p-17> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0206> ;
+    rvo:mean_population 108889 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-18> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0209> ;
+    rvo:mean_population 186558 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-19> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ020C> ;
+    rvo:mean_population 54767 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-2> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0524> ;
+    rvo:mean_population 78479 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ052> .
+
+<https://github.com/radimvalis/observations/p-20> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0314> ;
+    rvo:mean_population 70582 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-21> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0323> ;
+    rvo:mean_population 187985 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-22> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0421> ;
+    rvo:mean_population 126492 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-23> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0521> ;
+    rvo:mean_population 162193 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ052> .
+
+<https://github.com/radimvalis/observations/p-24> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0802> ;
+    rvo:mean_population 212422 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-25> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0312> ;
+    rvo:mean_population 60033 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-26> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0325> ;
+    rvo:mean_population 80228 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-27> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0202> ;
+    rvo:mean_population 95823 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-28> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0207> ;
+    rvo:mean_population 127221 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-29> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0100> ;
+    rvo:mean_population 1267173 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ010> .
+
+<https://github.com/radimvalis/observations/p-3> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0514> ;
+    rvo:mean_population 71593 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ051> .
+
+<https://github.com/radimvalis/observations/p-30> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0711> ;
+    rvo:mean_population 36884 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ071> .
+
+<https://github.com/radimvalis/observations/p-31> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0205> ;
+    rvo:mean_population 75402 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-32> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0201> ;
+    rvo:mean_population 99008 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-33> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ020A> ;
+    rvo:mean_population 149990 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-34> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ020B> ;
+    rvo:mean_population 114060 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-35> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0311> ;
+    rvo:mean_population 194994 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-36> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0315> ;
+    rvo:mean_population 50225 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-37> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0801> ;
+    rvo:mean_population 89906 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-38> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0804> ;
+    rvo:mean_population 149907 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-39> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0806> ;
+    rvo:mean_population 312908 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-4> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0522> ;
+    rvo:mean_population 78763 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ052> .
+
+<https://github.com/radimvalis/observations/p-40> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0313> ;
+    rvo:mean_population 89325 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-41> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0321> ;
+    rvo:mean_population 54313 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-42> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0412> ;
+    rvo:mean_population 110195 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ041> .
+
+<https://github.com/radimvalis/observations/p-43> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0324> ;
+    rvo:mean_population 68623 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-44> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0423> ;
+    rvo:mean_population 117473 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-45> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0426> ;
+    rvo:mean_population 124401 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-46> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0534> ;
+    rvo:mean_population 135977 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ053> .
+
+<https://github.com/radimvalis/observations/p-47> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0511> ;
+    rvo:mean_population 101997 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ051> .
+
+<https://github.com/radimvalis/observations/p-48> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0513> ;
+    rvo:mean_population 173337 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ051> .
+
+<https://github.com/radimvalis/observations/p-49> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0523> ;
+    rvo:mean_population 108092 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ052> .
+
+<https://github.com/radimvalis/observations/p-5> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0531> ;
+    rvo:mean_population 103657 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ053> .
+
+<https://github.com/radimvalis/observations/p-50> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0525> ;
+    rvo:mean_population 115365 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ052> .
+
+<https://github.com/radimvalis/observations/p-51> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0647> ;
+    rvo:mean_population 113389 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-52> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0631> ;
+    rvo:mean_population 93521 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ063> .
+
+<https://github.com/radimvalis/observations/p-53> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0532> ;
+    rvo:mean_population 171461 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ053> .
+
+<https://github.com/radimvalis/observations/p-54> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0634> ;
+    rvo:mean_population 109373 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ063> .
+
+<https://github.com/radimvalis/observations/p-55> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0715> ;
+    rvo:mean_population 118618 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ071> .
+
+<https://github.com/radimvalis/observations/p-56> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0204> ;
+    rvo:mean_population 103345 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-57> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0633> ;
+    rvo:mean_population 71457 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ063> .
+
+<https://github.com/radimvalis/observations/p-58> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0635> ;
+    rvo:mean_population 117181 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ063> .
+
+<https://github.com/radimvalis/observations/p-59> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0641> ;
+    rvo:mean_population 107795 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-6> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0642> ;
+    rvo:mean_population 378424 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-60> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0645> ;
+    rvo:mean_population 151344 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-61> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0533> ;
+    rvo:mean_population 102799 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ053> .
+
+<https://github.com/radimvalis/observations/p-62> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0632> ;
+    rvo:mean_population 112206 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ063> .
+
+<https://github.com/radimvalis/observations/p-63> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0643> ;
+    rvo:mean_population 224794 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-64> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0722> ;
+    rvo:mean_population 139922 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ072> .
+
+<https://github.com/radimvalis/observations/p-65> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0803> ;
+    rvo:mean_population 241184 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-66> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0316> ;
+    rvo:mean_population 69794 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-67> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0712> ;
+    rvo:mean_population 233661 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ071> .
+
+<https://github.com/radimvalis/observations/p-68> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0721> ;
+    rvo:mean_population 103753 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ072> .
+
+<https://github.com/radimvalis/observations/p-69> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0805> ;
+    rvo:mean_population 173853 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+<https://github.com/radimvalis/observations/p-7> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0644> ;
+    rvo:mean_population 114758 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/observations/p-70> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0203> ;
+    rvo:mean_population 164359 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-71> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0413> ;
+    rvo:mean_population 85452 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ041> .
+
+<https://github.com/radimvalis/observations/p-72> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0422> ;
+    rvo:mean_population 121643 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-73> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0425> ;
+    rvo:mean_population 107090 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-74> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0317> ;
+    rvo:mean_population 101333 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ031> .
+
+<https://github.com/radimvalis/observations/p-75> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0512> ;
+    rvo:mean_population 90204 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ051> .
+
+<https://github.com/radimvalis/observations/p-76> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0327> ;
+    rvo:mean_population 52793 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ032> .
+
+<https://github.com/radimvalis/observations/p-77> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0424> ;
+    rvo:mean_population 85466 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ042> .
+
+<https://github.com/radimvalis/observations/p-8> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0208> ;
+    rvo:mean_population 100584 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ020> .
+
+<https://github.com/radimvalis/observations/p-9> a qb:Observation ;
+    qb:dataSet <https://github.com/radimvalis/datasets/population-2021> ;
+    rvo:county <https://github.com/radimvalis/ontology#Counties/CZ0646> ;
+    rvo:mean_population 91984 ;
+    rvo:region <https://github.com/radimvalis/ontology#Regions/CZ064> .
+
+<https://github.com/radimvalis/dsd/population> a qb:DataStructureDefinition ;
+    qb:component [ qb:dimension rvo:region ],
+        [ qb:measure rvo:mean_population ],
+        [ qb:dimension rvo:county ] .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0100> a rvv:county ;
+    rdfs:label "CZ0100"@cs,
+        "CZ0100"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0201> a rvv:county ;
+    rdfs:label "CZ0201"@cs,
+        "CZ0201"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0202> a rvv:county ;
+    rdfs:label "CZ0202"@cs,
+        "CZ0202"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0203> a rvv:county ;
+    rdfs:label "CZ0203"@cs,
+        "CZ0203"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0204> a rvv:county ;
+    rdfs:label "CZ0204"@cs,
+        "CZ0204"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0205> a rvv:county ;
+    rdfs:label "CZ0205"@cs,
+        "CZ0205"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0206> a rvv:county ;
+    rdfs:label "CZ0206"@cs,
+        "CZ0206"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0207> a rvv:county ;
+    rdfs:label "CZ0207"@cs,
+        "CZ0207"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0208> a rvv:county ;
+    rdfs:label "CZ0208"@cs,
+        "CZ0208"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0209> a rvv:county ;
+    rdfs:label "CZ0209"@cs,
+        "CZ0209"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020A> a rvv:county ;
+    rdfs:label "CZ020A"@cs,
+        "CZ020A"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020B> a rvv:county ;
+    rdfs:label "CZ020B"@cs,
+        "CZ020B"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020C> a rvv:county ;
+    rdfs:label "CZ020C"@cs,
+        "CZ020C"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0311> a rvv:county ;
+    rdfs:label "CZ0311"@cs,
+        "CZ0311"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0312> a rvv:county ;
+    rdfs:label "CZ0312"@cs,
+        "CZ0312"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0313> a rvv:county ;
+    rdfs:label "CZ0313"@cs,
+        "CZ0313"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0314> a rvv:county ;
+    rdfs:label "CZ0314"@cs,
+        "CZ0314"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0315> a rvv:county ;
+    rdfs:label "CZ0315"@cs,
+        "CZ0315"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0316> a rvv:county ;
+    rdfs:label "CZ0316"@cs,
+        "CZ0316"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0317> a rvv:county ;
+    rdfs:label "CZ0317"@cs,
+        "CZ0317"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0321> a rvv:county ;
+    rdfs:label "CZ0321"@cs,
+        "CZ0321"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0322> a rvv:county ;
+    rdfs:label "CZ0322"@cs,
+        "CZ0322"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0323> a rvv:county ;
+    rdfs:label "CZ0323"@cs,
+        "CZ0323"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0324> a rvv:county ;
+    rdfs:label "CZ0324"@cs,
+        "CZ0324"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0325> a rvv:county ;
+    rdfs:label "CZ0325"@cs,
+        "CZ0325"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0326> a rvv:county ;
+    rdfs:label "CZ0326"@cs,
+        "CZ0326"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0327> a rvv:county ;
+    rdfs:label "CZ0327"@cs,
+        "CZ0327"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0411> a rvv:county ;
+    rdfs:label "CZ0411"@cs,
+        "CZ0411"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0412> a rvv:county ;
+    rdfs:label "CZ0412"@cs,
+        "CZ0412"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0413> a rvv:county ;
+    rdfs:label "CZ0413"@cs,
+        "CZ0413"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0421> a rvv:county ;
+    rdfs:label "CZ0421"@cs,
+        "CZ0421"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0422> a rvv:county ;
+    rdfs:label "CZ0422"@cs,
+        "CZ0422"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0423> a rvv:county ;
+    rdfs:label "CZ0423"@cs,
+        "CZ0423"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0424> a rvv:county ;
+    rdfs:label "CZ0424"@cs,
+        "CZ0424"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0425> a rvv:county ;
+    rdfs:label "CZ0425"@cs,
+        "CZ0425"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0426> a rvv:county ;
+    rdfs:label "CZ0426"@cs,
+        "CZ0426"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0427> a rvv:county ;
+    rdfs:label "CZ0427"@cs,
+        "CZ0427"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0511> a rvv:county ;
+    rdfs:label "CZ0511"@cs,
+        "CZ0511"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0512> a rvv:county ;
+    rdfs:label "CZ0512"@cs,
+        "CZ0512"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0513> a rvv:county ;
+    rdfs:label "CZ0513"@cs,
+        "CZ0513"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0514> a rvv:county ;
+    rdfs:label "CZ0514"@cs,
+        "CZ0514"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0521> a rvv:county ;
+    rdfs:label "CZ0521"@cs,
+        "CZ0521"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0522> a rvv:county ;
+    rdfs:label "CZ0522"@cs,
+        "CZ0522"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0523> a rvv:county ;
+    rdfs:label "CZ0523"@cs,
+        "CZ0523"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0524> a rvv:county ;
+    rdfs:label "CZ0524"@cs,
+        "CZ0524"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0525> a rvv:county ;
+    rdfs:label "CZ0525"@cs,
+        "CZ0525"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0531> a rvv:county ;
+    rdfs:label "CZ0531"@cs,
+        "CZ0531"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0532> a rvv:county ;
+    rdfs:label "CZ0532"@cs,
+        "CZ0532"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0533> a rvv:county ;
+    rdfs:label "CZ0533"@cs,
+        "CZ0533"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0534> a rvv:county ;
+    rdfs:label "CZ0534"@cs,
+        "CZ0534"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0631> a rvv:county ;
+    rdfs:label "CZ0631"@cs,
+        "CZ0631"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0632> a rvv:county ;
+    rdfs:label "CZ0632"@cs,
+        "CZ0632"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0633> a rvv:county ;
+    rdfs:label "CZ0633"@cs,
+        "CZ0633"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0634> a rvv:county ;
+    rdfs:label "CZ0634"@cs,
+        "CZ0634"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0635> a rvv:county ;
+    rdfs:label "CZ0635"@cs,
+        "CZ0635"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0641> a rvv:county ;
+    rdfs:label "CZ0641"@cs,
+        "CZ0641"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0642> a rvv:county ;
+    rdfs:label "CZ0642"@cs,
+        "CZ0642"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0643> a rvv:county ;
+    rdfs:label "CZ0643"@cs,
+        "CZ0643"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0644> a rvv:county ;
+    rdfs:label "CZ0644"@cs,
+        "CZ0644"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0645> a rvv:county ;
+    rdfs:label "CZ0645"@cs,
+        "CZ0645"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0646> a rvv:county ;
+    rdfs:label "CZ0646"@cs,
+        "CZ0646"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0647> a rvv:county ;
+    rdfs:label "CZ0647"@cs,
+        "CZ0647"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0711> a rvv:county ;
+    rdfs:label "CZ0711"@cs,
+        "CZ0711"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0712> a rvv:county ;
+    rdfs:label "CZ0712"@cs,
+        "CZ0712"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0713> a rvv:county ;
+    rdfs:label "CZ0713"@cs,
+        "CZ0713"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0714> a rvv:county ;
+    rdfs:label "CZ0714"@cs,
+        "CZ0714"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0715> a rvv:county ;
+    rdfs:label "CZ0715"@cs,
+        "CZ0715"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0721> a rvv:county ;
+    rdfs:label "CZ0721"@cs,
+        "CZ0721"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0722> a rvv:county ;
+    rdfs:label "CZ0722"@cs,
+        "CZ0722"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0723> a rvv:county ;
+    rdfs:label "CZ0723"@cs,
+        "CZ0723"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0724> a rvv:county ;
+    rdfs:label "CZ0724"@cs,
+        "CZ0724"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0801> a rvv:county ;
+    rdfs:label "CZ0801"@cs,
+        "CZ0801"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0802> a rvv:county ;
+    rdfs:label "CZ0802"@cs,
+        "CZ0802"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0803> a rvv:county ;
+    rdfs:label "CZ0803"@cs,
+        "CZ0803"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0804> a rvv:county ;
+    rdfs:label "CZ0804"@cs,
+        "CZ0804"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0805> a rvv:county ;
+    rdfs:label "CZ0805"@cs,
+        "CZ0805"@en .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0806> a rvv:county ;
+    rdfs:label "CZ0806"@cs,
+        "CZ0806"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ010> a rvv:region ;
+    rdfs:label "CZ010"@cs,
+        "CZ010"@en .
+
+rvo:county a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:label "OKRES_LAU kód"@cs,
+        "OKRES_LAU code"@en ;
+    qb:concept sdmx-concept:refArea ;
+    rdfs:range rvv:county ;
+    rdfs:subPropertyOf sdmx-dimension:refArea .
+
+rvo:mean_population a qb:MeasureProperty,
+        rdf:Property ;
+    rdfs:label "střední stav obyvatel"@cs,
+        "mean population"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:subPropertyOf sdmx-measure:obsValue .
+
+rvo:region a qb:DimensionProperty,
+        rdf:Property ;
+    rdfs:label "NUTS3-2004 kód"@cs,
+        "NUTS3-2004 code"@en ;
+    qb:concept sdmx-concept:refArea ;
+    rdfs:range rvv:region ;
+    rdfs:subPropertyOf sdmx-dimension:refArea .
+
+<https://github.com/radimvalis/ontology#Regions/CZ041> a rvv:region ;
+    rdfs:label "CZ041"@cs,
+        "CZ041"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ051> a rvv:region ;
+    rdfs:label "CZ051"@cs,
+        "CZ051"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ053> a rvv:region ;
+    rdfs:label "CZ053"@cs,
+        "CZ053"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ072> a rvv:region ;
+    rdfs:label "CZ072"@cs,
+        "CZ072"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ052> a rvv:region ;
+    rdfs:label "CZ052"@cs,
+        "CZ052"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ063> a rvv:region ;
+    rdfs:label "CZ063"@cs,
+        "CZ063"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ071> a rvv:region ;
+    rdfs:label "CZ071"@cs,
+        "CZ071"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ080> a rvv:region ;
+    rdfs:label "CZ080"@cs,
+        "CZ080"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ031> a rvv:region ;
+    rdfs:label "CZ031"@cs,
+        "CZ031"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ032> a rvv:region ;
+    rdfs:label "CZ032"@cs,
+        "CZ032"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ042> a rvv:region ;
+    rdfs:label "CZ042"@cs,
+        "CZ042"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ064> a rvv:region ;
+    rdfs:label "CZ064"@cs,
+        "CZ064"@en .
+
+<https://github.com/radimvalis/ontology#Regions/CZ020> a rvv:region ;
+    rdfs:label "CZ020"@cs,
+        "CZ020"@en .
+
+

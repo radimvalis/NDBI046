@@ -3,3 +3,5 @@
 *.csv
 *.ttl
 *.trig
+
+!datacube-population-2021.ttl
