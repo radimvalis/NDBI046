@@ -82,8 +82,8 @@ def main():
         return
 
     csv_data_path = sys.argv[1]
-    datacube = create_population_QB(URIRef(BASE_URI))
     dataset_uri = URIRef(f"{BASE_URI}/datasets/population-2021")
+    datacube = create_population_QB(dataset_uri)
     datacube = load_data_to_datacube(csv_data_path, datacube, dataset_uri)
     print(datacube.serialize(format="turtle"))
 

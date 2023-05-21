@@ -1,0 +1,35 @@
+@prefix dataset: <https://github.com/radimvalis/datasets/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix distr: <https://github.com/radimvalis/distributions/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dataset:population-2021 a dcat:Dataset ;
+    rdfs:label "Obyvatelstvo České republiky"@cs,
+        "Population of Czechia"@en ;
+    dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/NEVER> ;
+    dcterms:description "Datová sada popisující rozložení obyvatelstva v České republice"@cs,
+        "Dataset describing the distribution of population in Czechia"@en ;
+    dcterms:publisher "https://github.com/radimvalis/me"^^xsd:anyURI ;
+    dcterms:spatial <http://publications.europa.eu/resource/authority/country/CZE> ;
+    dcat:distribution distr:population-2021 ;
+    dcat:keyword "obyvatelstvo"@cs,
+        "rozložení obyvatelstva"@cs,
+        "Česká republika"@cs,
+        "Czechia"@en,
+        "distribution of population"@en,
+        "population"@en ;
+    dcat:theme <http://eurovoc.europa.eu/3300>,
+        <http://eurovoc.europa.eu/5860>,
+        <http://eurovoc.europa.eu/7816> .
+
+distr:population-2021 a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:title "Population 2021"@en ;
+    spdx:checksum [ a spdx:Checksum ;
+            spdx:algorithm spdx:checksumAlgorithm_sha1 ;
+            spdx:checksumValue "82129483eb3e8b2e150994a8a6937d243a57c639"^^xsd:hexBinary ] ;
+    dcat:accessURL <https://radimvalis.github.io/NDBI046/datacube-population-2021.ttl> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .

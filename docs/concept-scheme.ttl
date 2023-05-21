@@ -1,0 +1,553 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rvcs: <https://github.com/radimvalis/concept-schemes> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0100> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ010> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Praha"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0201> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Benešov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0202> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Beroun"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0203> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Kladno"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0204> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Kolín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0205> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Kutná Hora"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0206> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Mělník"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0207> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Mladá Boleslav"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0208> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Nymburk"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0209> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Praha-východ"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020A> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Praha-západ"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020B> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Příbram"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ020C> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ020> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Rakovník"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0311> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "České Budějovice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0312> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Český Krumlov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0313> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Jindřichův Hradec"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0314> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Písek"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0315> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Prachatice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0316> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Strakonice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0317> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ031> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Tábor"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0321> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Domažlice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0322> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Klatovy"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0323> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Plzeň-město"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0324> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Plzeň-jih"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0325> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Plzeň-sever"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0326> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Rokycany"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0327> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ032> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Tachov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0411> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ041> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Cheb"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0412> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ041> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Karlovy Vary"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0413> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ041> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Sokolov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0421> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Děčín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0422> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Chomutov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0423> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Litoměřice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0424> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Louny"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0425> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Most"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0426> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Teplice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0427> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ042> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Ústí nad Labem"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0511> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ051> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Česká Lípa"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0512> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ051> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Jablonec nad Nisou"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0513> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ051> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Liberec"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0514> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ051> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Semily"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0521> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ052> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Hradec Králové"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0522> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ052> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Jičín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0523> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ052> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Náchod"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0524> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ052> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Rychnov nad Kněžnou"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0525> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ052> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Trutnov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0531> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ053> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Chrudim"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0532> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ053> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Pardubice"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0533> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ053> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Svitavy"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0534> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ053> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Ústí nad Orlicí"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0631> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ063> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Havlíčkův Brod"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0632> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ063> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Jihlava"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0633> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ063> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Pelhřimov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0634> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ063> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Třebíč"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0635> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ063> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Žďár nad Sázavou"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0641> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Blansko"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0642> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Brno-město"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0643> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Brno-venkov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0644> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Břeclav"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0645> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Hodonín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0646> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Vyškov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0647> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ064> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Znojmo"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0711> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ071> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Jeseník"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0712> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ071> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Olomouc"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0713> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ071> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Prostějov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0714> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ071> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Přerov"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0715> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ071> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Šumperk"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0721> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ072> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Kroměříž"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0722> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ072> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Uherské Hradiště"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0723> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ072> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Vsetín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0724> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ072> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Zlín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0801> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Bruntál"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0802> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Frýdek-Místek"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0803> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Karviná"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0804> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Nový Jičín"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0805> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Opava"@cs .
+
+<https://github.com/radimvalis/ontology#Counties/CZ0806> a skos:Concept ;
+    skos:broader <https://github.com/radimvalis/ontology#Regions/CZ080> ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:prefLabel "Ostrava-město"@cs .
+
+<https://github.com/radimvalis/ontology#Regions/CZ010> skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0100> .
+
+<https://github.com/radimvalis/ontology#Regions/CZ041> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0411>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0412>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0413> ;
+    skos:prefLabel "Karlovarský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ051> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0511>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0512>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0513>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0514> ;
+    skos:prefLabel "Liberecký kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ053> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0531>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0532>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0533>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0534> ;
+    skos:prefLabel "Pardubický kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ072> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0721>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0722>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0723>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0724> ;
+    skos:prefLabel "Zlínský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ052> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0521>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0522>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0523>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0524>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0525> ;
+    skos:prefLabel "Královéhradecký kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ063> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0631>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0632>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0633>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0634>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0635> ;
+    skos:prefLabel "Kraj Vysočina"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ071> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0711>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0712>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0713>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0714>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0715> ;
+    skos:prefLabel "Olomoucký kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ080> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0801>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0802>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0803>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0804>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0805>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0806> ;
+    skos:prefLabel "Moravskoslezský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ031> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0311>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0312>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0313>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0314>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0315>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0316>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0317> ;
+    skos:prefLabel "Jihočeský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ032> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0321>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0322>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0323>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0324>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0325>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0326>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0327> ;
+    skos:prefLabel "Plzeňský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ042> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0421>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0422>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0423>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0424>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0425>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0426>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0427> ;
+    skos:prefLabel "Ústecký kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ064> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0641>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0642>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0643>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0644>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0645>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0646>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0647> ;
+    skos:prefLabel "Jihomoravský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+<https://github.com/radimvalis/ontology#Regions/CZ020> a skos:Concept ;
+    skos:inScheme rvcs:territorial_units ;
+    skos:narrower <https://github.com/radimvalis/ontology#Counties/CZ0201>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0202>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0203>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0204>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0205>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0206>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0207>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0208>,
+        <https://github.com/radimvalis/ontology#Counties/CZ0209>,
+        <https://github.com/radimvalis/ontology#Counties/CZ020A>,
+        <https://github.com/radimvalis/ontology#Counties/CZ020B>,
+        <https://github.com/radimvalis/ontology#Counties/CZ020C> ;
+    skos:prefLabel "Středočeský kraj"@cs ;
+    skos:topConceptOf rvcs:territorial_units .
+
+rvcs:territorial_units a skos:ConceptScheme ;
+    dcterms:creator "https://github.com/radimvalis/me"^^xsd:anyURI ;
+    dcterms:title "Územní jednotky České republiky"@cs,
+        "Territorial units of Czechia"@en ;
+    skos:hasTopConcept <https://github.com/radimvalis/ontology#Regions/CZ020>,
+        <https://github.com/radimvalis/ontology#Regions/CZ031>,
+        <https://github.com/radimvalis/ontology#Regions/CZ032>,
+        <https://github.com/radimvalis/ontology#Regions/CZ041>,
+        <https://github.com/radimvalis/ontology#Regions/CZ042>,
+        <https://github.com/radimvalis/ontology#Regions/CZ051>,
+        <https://github.com/radimvalis/ontology#Regions/CZ052>,
+        <https://github.com/radimvalis/ontology#Regions/CZ053>,
+        <https://github.com/radimvalis/ontology#Regions/CZ063>,
+        <https://github.com/radimvalis/ontology#Regions/CZ064>,
+        <https://github.com/radimvalis/ontology#Regions/CZ071>,
+        <https://github.com/radimvalis/ontology#Regions/CZ072>,
+        <https://github.com/radimvalis/ontology#Regions/CZ080> .
+
+

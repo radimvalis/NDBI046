@@ -1,28 +1,34 @@
 #!/usr/bin/env python3
 
-from rdflib import Graph, Namespace, URIRef, Literal, RDF, DCAT, RDFS, XSD, DCTERMS
+from rdflib import Graph, BNode, Namespace, URIRef, Literal, RDF, DCAT, RDFS, XSD, DCTERMS
 
 DISTR = Namespace("https://github.com/radimvalis/distributions/")
 DATASET = Namespace("https://github.com/radimvalis/datasets/")
+SPDX = Namespace("http://spdx.org/rdf/terms#")
 
 def create_dcat_dataset() -> Graph:
 
     graph = Graph()
     graph.bind("distr", DISTR)
     graph.bind("dataset", DATASET)
+    graph.bind("spdx", SPDX)
 
     DISTR_POPULATION = DISTR["population-2021"]
 
     graph.add((DISTR_POPULATION , RDF.type, DCAT.Distribution))
     graph.add((DISTR_POPULATION , DCTERMS.title, Literal("Population 2021", lang="en")))
-    graph.add((DISTR_POPULATION , DCAT.accessURL, URIRef("https://github.com/radimvalis/NDBI046/blob/main/skos-dcat/datacube-population-2021.ttl")))
+    graph.add((DISTR_POPULATION , DCAT.accessURL, URIRef("https://radimvalis.github.io/NDBI046/datacube-population-2021.ttl")))
     graph.add((DISTR_POPULATION , DCAT.mediaType, URIRef("https://www.iana.org/assignments/media-types/text/turtle")))
     graph.add((DISTR_POPULATION , DCTERMS.format, URIRef("http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE")))
+    checksum = BNode()
+    graph.add((checksum, RDF.type, SPDX.Checksum))
+    graph.add((checksum, SPDX.algorithm, SPDX.checksumAlgorithm_sha1))
+    graph.add((checksum, SPDX.checksumValue, Literal("82129483eb3e8b2e150994a8a6937d243a57c639", datatype=XSD.hexBinary)))
+    graph.add((DISTR_POPULATION, SPDX.checksum, checksum))
 
     DATASET_POPULATION = DATASET["population-2021"]
 
     graph.add((DATASET_POPULATION, RDF.type, DCAT.Dataset))
-    
     graph.add((DATASET_POPULATION, RDFS.label, Literal("Obyvatelstvo České republiky", lang="cs")))
     graph.add((DATASET_POPULATION, RDFS.label, Literal("Population of Czechia", lang="en")))
     graph.add((DATASET_POPULATION, DCTERMS.description, Literal("Datová sada popisující rozložení obyvatelstva v České republice", lang="cs")))
